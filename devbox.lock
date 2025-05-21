@@ -1,0 +1,105 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "deno@2": {
+      "last_modified": "2025-05-16T20:19:48Z",
+      "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#deno",
+      "source": "devbox-search",
+      "version": "2.2.12",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/mifglxl1sq45g2sb9mfb6knldzkwmd14-deno-2.2.12",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/mifglxl1sq45g2sb9mfb6knldzkwmd14-deno-2.2.12"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6ls1j00rfl3hdpdg7yxc06ar259s0pb4-deno-2.2.12",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6ls1j00rfl3hdpdg7yxc06ar259s0pb4-deno-2.2.12"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3zczwps8vw0w173r5md0gmlgbqx91cz6-deno-2.2.12",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3zczwps8vw0w173r5md0gmlgbqx91cz6-deno-2.2.12"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/c6bn1pnbqn1jmr21v98bqq082wmlhhz4-deno-2.2.12",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/c6bn1pnbqn1jmr21v98bqq082wmlhhz4-deno-2.2.12"
+        }
+      }
+    },
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2025-05-07T00:09:58Z",
+      "resolved": "github:NixOS/nixpkgs/b3582c75c7f21ce0b429898980eddbbf05c68e55?lastModified=1746576598&narHash=sha256-FshoQvr6Aor5SnORVvh%2FZdJ1Sa2U4ZrIMwKBX5k2wu0%3D"
+    },
+    "opencode@latest": {
+      "last_modified": "2025-05-16T20:19:48Z",
+      "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#opencode",
+      "source": "devbox-search",
+      "version": "0.0.46",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/86fhvy564dyzabg138sc4z5sirxv9hqv-opencode-0.0.46",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/86fhvy564dyzabg138sc4z5sirxv9hqv-opencode-0.0.46"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/l6zn9zh1na1sg8wb14farz33zlhwrp4b-opencode-0.0.46",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/l6zn9zh1na1sg8wb14farz33zlhwrp4b-opencode-0.0.46"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6s1h9cnh6nkxvifqv5rxcmf0drpi15w0-opencode-0.0.46",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6s1h9cnh6nkxvifqv5rxcmf0drpi15w0-opencode-0.0.46"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vr0nrbb0y2zbk26ikprwbkard2pzy3lh-opencode-0.0.46",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/vr0nrbb0y2zbk26ikprwbkard2pzy3lh-opencode-0.0.46"
+        }
+      }
+    }
+  }
+}

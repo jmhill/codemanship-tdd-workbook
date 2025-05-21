@@ -1,0 +1,31 @@
+# Deno specific
+.deno/
+.vscode/
+*.orig
+*.pyc
+*.swp
+
+# Coverage reports
+coverage/
+lcov.info
+
+# Environment variables
+.env
+.env.local
+
+# Devbox
+.devbox/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# opencode working files
+.opencode
