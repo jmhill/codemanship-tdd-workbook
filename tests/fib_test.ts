@@ -1,4 +1,4 @@
-import { assertEquals } from '@std/assert';
+import { assertEquals, assertThrows } from '@std/assert';
 import { nthFibonacci } from '../src/fib.ts';
 
 Deno.test('nthFibonacci returns index number for first 2 indices', async (t) => {
@@ -29,4 +29,8 @@ Deno.test('nthFibonacci returns sum of previous 2 nthFibs for given index after 
       assertEquals(nthFibonacci(n), nthFib);
     });
   }
+});
+
+Deno.test('index must be positive integer', () => {
+  assertThrows(() => nthFibonacci(-1));
 });
