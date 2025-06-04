@@ -14,11 +14,14 @@ Deno.test('nthFibonacci returns index number for first 2 indices', async (t) => 
   }
 });
 
-Deno.test('nthFibonacci returns index number minux 1 for given index after first 2', async (t) => {
+Deno.test('nthFibonacci returns sum of previous 2 nthFibs for given index after first 2', async (t) => {
   const cases: [n: number, nthFib: number][] = [
     [2, 1],
     [3, 2],
     [4, 3],
+    [5, 5],
+    [6, 8],
+    [7, 13],
   ];
 
   for (const [n, nthFib] of cases) {
