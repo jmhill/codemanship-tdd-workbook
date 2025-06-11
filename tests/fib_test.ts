@@ -1,6 +1,13 @@
 import { assertEquals, assertThrows } from '@std/assert';
 import { nthFibonacci } from '../src/fib.ts';
 
+// These tests are designed to mirror the key behaviors of the algorithm;
+// While we could implement the entire test table in a single test,
+// providing more descriptive tests for each 'branch' of the algorithm
+// helps us more effectively determine the reason for failure if
+// we make a bad change to the code (and also helps us document the
+// algorithm itself).
+
 Deno.test('nthFibonacci returns index number for first 2 indices', async (t) => {
   const cases: [n: number, nthFib: number][] = [
     [0, 0],
