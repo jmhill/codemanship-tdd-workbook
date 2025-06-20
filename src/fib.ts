@@ -17,7 +17,7 @@
 // generators to demonstrate the suitability of the tests
 export function nthFibonacci(index: number): number {
   if (index < 0) {
-    throw new Error('index must be positive integer');
+    throw new Error('index must be zero or positive integer');
   }
   if (index < 2) {
     return index;
