@@ -32,7 +32,7 @@ testThrows(
     [-1, 'Negative number'],
     [-100, 'Negative number'],
     [-1000000, 'Negative number'],
-  ]
+  ],
 );
 
 testCases(
@@ -118,7 +118,7 @@ testCases(
 // Test that testThrows properly handles cases where function doesn't throw
 Deno.test('testThrows fails when function does not throw', () => {
   const nonThrowingFunction = (x: number) => x * 2; // This function never throws
-  
+
   assertThrows(() => {
     // Manually create and run the test function that testThrows would create
     const cases: Array<[number, string]> = [[5, 'Some error']]; // Expecting it to throw, but it won't
@@ -127,7 +127,9 @@ Deno.test('testThrows fails when function does not throw', () => {
         () => nonThrowingFunction(input),
         Error,
         expectedErrorMessage,
-        `Function with input ${JSON.stringify(input)} should throw "${expectedErrorMessage}"`
+        `Function with input ${
+          JSON.stringify(input)
+        } should throw "${expectedErrorMessage}"`,
       );
     });
   });
@@ -137,11 +139,11 @@ Deno.test('testThrows fails when function does not throw', () => {
 testThrows(
   'testThrows handles empty arrays',
   throwingFunction,
-  []
+  [],
 );
 
 testThrows(
   'testThrows handles single test case',
   throwingFunction,
-  [[-1, 'Negative number']]
+  [[-1, 'Negative number']],
 );

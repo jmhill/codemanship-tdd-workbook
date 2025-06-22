@@ -57,7 +57,7 @@ export function testCasesWithSubtests<Input, Output>(
 /**
  * Helper function to test that a function throws expected errors for given inputs.
  * Creates a single test with all exception cases run in sequence.
- * 
+ *
  * @param description - The test description
  * @param testFunction - The function that should throw
  * @param cases - Array of [input, expectedErrorMessage] tuples
@@ -65,7 +65,7 @@ export function testCasesWithSubtests<Input, Output>(
 export function testThrows<Input>(
   description: string,
   testFunction: (input: Input) => unknown,
-  cases: Array<[Input, string]>
+  cases: Array<[Input, string]>,
 ): void {
   Deno.test(description, () => {
     cases.forEach(([input, expectedErrorMessage]) => {
@@ -73,7 +73,9 @@ export function testThrows<Input>(
         () => testFunction(input),
         Error,
         expectedErrorMessage,
-        `Function with input ${JSON.stringify(input)} should throw "${expectedErrorMessage}"`
+        `Function with input ${
+          JSON.stringify(input)
+        } should throw "${expectedErrorMessage}"`,
       );
     });
   });

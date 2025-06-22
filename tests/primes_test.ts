@@ -13,7 +13,7 @@ testCases(
     [1, [2]],
     [2, [2, 3]],
     [5, [2, 3, 5, 7, 11]],
-  ]
+  ],
 );
 
 Deno.test('nPrimes: produces 1000 primes when given 1000', () => {
@@ -25,17 +25,17 @@ Deno.test('nPrimes: produces 1000 primes when given 1000', () => {
 testCases(
   'isPrime: returns false for all numbers less than 2',
   isPrime,
-  [[1, false], [0, false], [-1, false]]
+  [[1, false], [0, false], [-1, false]],
 );
 
 testCases(
   'isPrime: returns true for prime numbers',
   isPrime,
-  [[2, true], [3, true], [5, true], [7, true], [11, true]]
+  [[2, true], [3, true], [5, true], [7, true], [11, true]],
 );
 
 testCases(
   'isPrime: returns false for composite numbers',
   isPrime,
-  [[4, false], [6, false], [8, false], [9, false], [10, false]]
+  [[4, false], [6, false], [8, false], [9, false], [10, false]],
 );
